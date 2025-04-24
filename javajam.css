@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+#herojobs {
+    height: 250px;
+    background-image: url(image/herojobs.jpg);
+    background-size: 100% 100%;
+}
+
+#heroroad {
+    background-image: url(image/heroroad.jpg);
+    background-size: 100%;
+    height: 250px;
+}
+
+#heromugs {
+    background-image: url(image/heromugs.jpg);
+    background-size: 100%;
+    height: 250px;
+}
+
+#heroguitar {
+    background-image: url(image/heroguitar.jpg);
+    background-size: 100%;
+    height: 250px;
+}
+
+body {
+    background-color: #FCEBB6;
+    color:#221811; /*text color*/
+    font-family:Verdana, Arial, sans-serif; 
+    background-image: url(image/background.gif)
+}
+
+header {
+    background-color: #D2B48C;
+    /*text-align: center; */
+    height: 150PX;
+    background-repeat: no-repeat;
+    background-image: url(image/javajamlogo.jpg);
+    display: block;
+
+}
+
+h1 {
+    /*line-height: 200%; */ /*spacing. 200% = double spacing*/
+    padding-top: 45px; /*padding: top, right, bottom, left*/
+    padding-left: 220px;
+    font-size: 3em;
+}
+
+/*pseudo-class for nav hyperlink (must follow sequence below)
+:link - default state for hypewrlink that has not been clicked (1)
+:visited - default state for hyperlink that has been clicked (2)
+:focus - triggered when the hyperlink has keyboard focus (3)
+:hover - triggered when the mouse pointer moves over the hyperlink (4)
+:active - triggered when the hyperlink is actually clicked (5)*/
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+    float: left; /*to float the element on the left side of the container*/
+    width: 200px;
+    display: block;
+}
+
+nav a{ /*descendant selectoor*/
+    text-decoration: none; /*remove underline in hyperlink*/
+}
+
+nav a:link {
+    color: #FEF6C2;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    list-style-type: none; /*remove list marker*/
+    padding-left: 0; 
+}
+
+footer {
+        background-color: #D2B48C;
+        font-size: .60em; /*em = pt = px = %. For font size*/
+        font-style: italic;
+        text-align: center;
+        padding: 0px 0px 10px 0px;
+        border-top: 2px solid #221811; /*width  style  color*/
+        display: block;
+}
+
+#wrapper {
+    width: 80%; /*the width of the content of the element*/
+    margin-left: auto; /*configure the space in the left margin of the element*/
+    margin-right: auto; /*configure the space in the right margin of the element*/
+    background-color: #231814;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px 3px #333333; /*need to identify at least 3 value, max 5 value, the last value always color*/
+     /*horizontal offset,vertical offset,blur effect,spread radius,color*/
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #231814;
+    clear: left; /*often used to terminate or clean float */
+}
+
+main {
+    padding: 0em 0em 2em 0em;
+    display: block;
+    margin-left: 200px;
+    background-color: #FEF6C2;  
+    display: block;
+}
+
+main h2, main h3, main h4,main dl, main ul,main div, main p {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.details { /*id selector uses # while class selector uses . */
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto; 
+    /* often used to clear a float although its intended purpose is to configure how content should display if it is too large for the area allocated.
+     Auto = if needed, scrollbars are display to allow access to the remaining content  */
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.floatleft { 
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+td, th {
+    padding: 10px; /* for all sides */
+}
+
+table {
+    width: 90%;
+    margin: auto; /* for all sides */
+    border-spacing: 0;
+    background-color: #FFFFCC;
+}
+
+/* TABLE PSEUDOCLASS
+:first-of-type - apply to the first element of specific type 
+:first-child - apply to first child of an element
+:last-of-type - apply to the last element of the specific type 
+:last-child - apply to the last child of an element
+:nth-of-type(n) - apply to the "nth" element of the specific type. Values can be number, odd, or even*/
+
+tr:nth-of-type(odd) {
+    background-color: #D2B48E;
+}
+
+form {
+    padding: 2em;
+}
+
+label {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit {
+    margin-left: 9.5em;
+}
